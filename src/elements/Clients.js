@@ -1,7 +1,7 @@
 import React from "react";
 import { IMAGES } from "../constants/theme";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper";
+import { Autoplay } from "swiper/modules";
 
 const clientLogo = [
   { img: IMAGES.clientLogo4 },

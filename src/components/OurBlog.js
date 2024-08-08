@@ -2,7 +2,7 @@ import React from "react";
 import { IMAGES } from "../constants/theme";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Link } from "react-router-dom";
-import { Autoplay } from "swiper";
+import { Autoplay } from "swiper/modules";
 
 const carousel = [
   {

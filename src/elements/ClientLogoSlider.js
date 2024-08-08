@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 
-import { Autoplay } from "swiper";
+import { Autoplay } from "swiper/modules";
 import { IMAGES } from "../constants/theme";
 
 const dataBlog = [
