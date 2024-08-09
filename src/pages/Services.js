@@ -40,7 +40,7 @@ const Services = () => {
                                         <div className="icon-content">
                                             <h5 className="dz-title m-b10"><Link to={"#"}>{item.title}</Link></h5>
                                             <p className="m-b25">Aliquam sit amet volutpat sem, eget aliquet odio. Integer lobortis sed.</p>
-                                            <Link to={"/services-details"} className="btn btn-primary shadow-primary btn-skew"><span>Read More</span></Link>
+                                            <div className="btn btn-primary shadow-primary btn-skew"><span>Read More</span></div>
                                         </div>
                                     </div>
                                 </div>
