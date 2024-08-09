@@ -26,6 +26,7 @@ const DzInfo1 = ({ title, subtitle, desc }) => {
         </div>
     )
 }
+
 const DzInfo2 = ({ title, subtitle, desc }) => {
     return (
         <div className="col-xl-3 col-md-6">
