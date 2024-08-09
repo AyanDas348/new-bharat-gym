@@ -19,10 +19,10 @@ export const MenuListArray2 = [
                 title: 'About Us',
                 to: '/about-us',
             },
-            {
-                title: 'Team',
-                to: '/team',
-            },
+            // {
+            //     title: 'Team',
+            //     to: '/team',
+            // },
             {
                 title: 'Pricing',
                 to: '/pricing',

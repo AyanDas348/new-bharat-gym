@@ -60,13 +60,11 @@ function WorkoutSlider() {
           <SwiperSlide key={ind}>
             <div className={`dz-box style-1 ${item.changestyle}`}>
               <div className="dz-media">
-                <Link to={"/portfolio-details"}>
                   <img src={item.image} alt="" />
-                </Link>
               </div>
               <div className="dz-info">
                 <h3 className="title">
-                  <Link to={"/portfolio-details"}>{item.title}</Link>
+                  {item.title}
                 </h3>
               </div>
             </div>

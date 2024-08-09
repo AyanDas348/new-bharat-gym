@@ -49,14 +49,14 @@ const AboutUs = () => {
                         <path d="M682 0L0 56L682 109V0Z" fill="var(--primary)"/>
                     </svg>
                 </section>
-                <section className="content-inner-1 overflow-hidden" style={{backgroundImage: "url("+IMAGES.BgImage1 +")"}}>			        
+                {/* <section className="content-inner-1 overflow-hidden" style={{backgroundImage: "url("+IMAGES.BgImage1 +")"}}>			        
                     <LatestSlider />
-                </section>
-                <section className="call-action style-1 footer-action">
+                </section> */}
+                {/* <section className="call-action style-1 footer-action">
 			        <div className="container">
                         <NewsLetter />
                     </div>
-                </section>
+                </section> */}
             </div>   
         </>
     );

@@ -26,8 +26,8 @@ const ScheduleTable = () => {
                         </td>
                         <td className="event" rowspan="2">
                             <Link to={"#"} className="title">Crossfit Class</Link>
-                            <span className="subtitle">Madison Fren</span>
-                            <div className="event-tag">Hit Training</div>
+                            <span className="subtitle">Bharat Kumar</span>
+                            <div className="event-tag">Hiit Training</div>
                         </td>
                         <td></td>
                         <td></td>
@@ -42,18 +42,18 @@ const ScheduleTable = () => {
                         <td className="event-time"> 07:00 - 08:00 </td>
                         <td className="event" rowspan="3">
                             <Link to={"#"} className="title">Power Lifting</Link>
-                            <span className="subtitle">Joe Bell</span>
+                            <span className="subtitle">Bharat Kumar</span>
                             <div className="event-tag">Strenght</div>
                         </td>
                         <td></td>
                         <td className="event" rowspan="3">
                             <Link to={"#"} className="title">Power Lifting</Link>
-                            <span className="subtitle">Joe Bell</span>
+                            <span className="subtitle">Bharat Kumar</span>
                             <div className="event-tag">Strenght</div>
                         </td>
                         <td className="event">
                             <Link to={"#"} className="title">Cardio Burn</Link>
-                            <span className="subtitle">Anna Simms Jr.</span>
+                            <span className="subtitle">Bharat Kumar</span>
                             <div className="event-tag">Aerobic</div>
                         </td>
                     </tr>
@@ -72,7 +72,7 @@ const ScheduleTable = () => {
                         <td></td>
                         <td className="event" rowspan="6">
                             <Link to={"#"} className="title" >Crossfit Class</Link>
-                            <span className="subtitle">Madison Fren</span>
+                            <span className="subtitle">Bharat Kumar</span>
                             <div className="event-tag">Hit Training</div>
                         </td>
                         <td></td>
@@ -104,23 +104,23 @@ const ScheduleTable = () => {
                         <td className="event-time"> 12:00 - 13:00 </td>
                         <td className="event">
                             <Link to={"#"} className="title" >Power Lifting</Link>
-                            <span className="subtitle">Joe Bell</span>
+                            <span className="subtitle">Bharat Kumar</span>
                             <div className="event-tag">Strength</div>
                         </td>
                         <td></td>
                         <td className="event">
                             <Link to={"#"} className="title" >Cardio Burn</Link>
-                            <span className="subtitle">Anna Simms Jr.</span>
+                            <span className="subtitle">Bharat Kumar</span>
                             <div className="event-tag">Aerobic</div>
                         </td>
                         <td className="event">
                             <Link to={"#"} className="title">Crossfit Class</Link>
-                            <span className="subtitle">Madison Fren</span>
+                            <span className="subtitle">Bharat Kumar</span>
                             <div className="event-tag">Hit Training</div>
                         </td>
                         <td className="event">
                             <Link to={"#"} className="title" >Crossfit Class</Link>
-                            <span className="subtitle">Madison Fren</span>
+                            <span className="subtitle">Bharat Kumar</span>
                             <div className="event-tag">Hit Training</div>
                         </td>
                         <td></td>
@@ -161,12 +161,12 @@ const ScheduleTable = () => {
                         <td className="event-time"> 18:00 - 19:00 </td>
                         <td className="event" rowspan="2">
                             <Link to={"#"} className="title" >Crossfit Class</Link>
-                            <span className="subtitle">Madison Fren</span>
+                            <span className="subtitle">Bharat Kumar</span>
                             <div className="event-tag">Hit Training</div>
                         </td>
                         <td className="event" rowspan="2">
                             <Link to={"#"} className="title">Power Lifting</Link>
-                            <span className="subtitle">Joe Bell</span>
+                            <span className="subtitle">Bharat Kumar</span>
                             <div className="event-tag">Strength</div>
                         </td>
                         <td></td>
@@ -187,7 +187,7 @@ const ScheduleTable = () => {
                         <td className="event-time"> 20:00 - 21:00 </td>
                         <td className="event">
                             <Link to={"#"} className="title">Cardio Burn</Link>
-                            <span className="subtitle">Anna Simms Jr.</span>
+                            <span className="subtitle">Bharat Kumar</span>
                             <div className="event-tag">Aerobic</div>
                         </td>
                         <td></td>
@@ -195,7 +195,7 @@ const ScheduleTable = () => {
                         <td></td>
                         <td className="event">
                             <Link to={"#"} className="title" >Cardio Burn</Link>
-                            <span className="subtitle">Anna Simms Jr.</span>
+                            <span className="subtitle">Bharat Kumar</span>
                             <div className="event-tag">Aerobic</div>
                         </td>
                         <td></td>

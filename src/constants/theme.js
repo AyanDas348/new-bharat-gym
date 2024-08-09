@@ -48,10 +48,10 @@ export const IMAGES = {
   aboutlogo3: require("../assets/images/about/logo3.png"),
   aboutlogo4: require("../assets/images/about/logo4.png"),
 
-  services1: require("../assets/images/services/pic1.jpg"),
-  services2: require("../assets/images/services/pic2.jpg"),
-  services3: require("../assets/images/services/pic3.jpg"),
-  services4: require("../assets/images/services/pic4.jpg"),
+  services1: require("../assets/images/services/crossfit.jpg"),
+  services2: require("../assets/images/services/crossfit.jpg"),
+  services3: require("../assets/images/services/crossfit.jpg"),
+  services4: require("../assets/images/services/crossfit.jpg"),
 
   aboutgirl: require("../assets/images/about/girl.png"),
   aboutman: require("../assets/images/about/man.png"),
@@ -74,13 +74,13 @@ export const IMAGES = {
   team5: require("../assets/images/team/member5.png"),
   team6: require("../assets/images/team/member6.png"),
 
-  portfolio1: require("../assets/images/portfolio/pic1.jpg"),
-  portfolio2: require("../assets/images/portfolio/pic2.jpg"),
-  portfolio3: require("../assets/images/portfolio/pic3.jpg"),
-  portfolio4: require("../assets/images/portfolio/pic4.jpg"),
-  portfolio5: require("../assets/images/portfolio/pic5.jpg"),
-  portfolio6: require("../assets/images/portfolio/pic6.jpg"),
-  portfolio7: require("../assets/images/portfolio/pic7.jpg"),
+  portfolio1: require("../assets/images/portfolio/GYM INTERIOR_1.11.1.jpg"),
+  portfolio2: require("../assets/images/portfolio/GYM INTERIOR_1.15.1.jpg"),
+  portfolio3: require("../assets/images/portfolio/GYM INTERIOR_1.31.1.jpg"),
+  portfolio4: require("../assets/images/portfolio/GYM INTERIOR_1.32.1.jpg"),
+  portfolio5: require("../assets/images/portfolio/GYM INTERIOR_1.37.1.jpg"),
+  portfolio6: require("../assets/images/portfolio/GYM INTERIOR_1.39.1.jpg"),
+  portfolio7: require("../assets/images/portfolio/GYM INTERIOR_1.11.1.jpg"),
 
   bloggrid1: require("../assets/images/blog/blog-grid/pic1.jpg"),
   bloggrid2: require("../assets/images/blog/blog-grid/pic2.jpg"),
@@ -107,7 +107,7 @@ export const IMAGES = {
   avatarlarge2: require("../assets/images/avatar/large/avatar2.jpg"),
   avatarlarge3: require("../assets/images/avatar/large/avatar3.jpg"),
 
-  singlepic1: require("../assets/images/portfolio/single/pic1.jpg"),
+  singlepic1: require("../assets/images/portfolio/GYM INTERIOR_1.11.1.jpg"),
   modalpic: require("../assets/images/modal-pic.jpg"),
 
   //switcher
@@ -170,15 +170,15 @@ export const IMAGES = {
   clientLogo5: require("../assets/images/client-logo/logo5.png"),
   clientLogo6: require("../assets/images/client-logo/logo6.png"),
 
-  mainSliderPic1: require("../assets/images/main-slider/slider3/pic1.png"),
+  mainSliderPic1: require("../assets/images/portfolio/GYM INTERIOR_1.11.1.jpg"),
   miniSlidePic1: require("../assets/images/main-slider/slider3/pic1.jpg"),
 
   beforeimg: require("../assets/images/after-before/before.jpg"),
   afterimg: require("../assets/images/after-before/after.jpg"),
 
-  portfolioPic8: require("../assets/images/portfolio/pic8.png"),
-  portfolioPic9: require("../assets/images/portfolio/pic9.png"),
-  portfolioPic10: require("../assets/images/portfolio/pic10.png"),
+  portfolioPic8: require("../assets/images/portfolio/GYM INTERIOR_1.31.1.jpg"),
+  portfolioPic9: require("../assets/images/portfolio/GYM INTERIOR_1.32.1.jpg"),
+  portfolioPic10: require("../assets/images/portfolio/GYM INTERIOR_1.39.1.jpg"),
 };
 
 export const SVGICON = {

@@ -80,9 +80,9 @@ const Services = () => {
                     <img className="svg-shape rotate-360" src={SVGICON.circlebigSvg1} alt=""/>
                     <img className="svg-shape-2 rotate-360" src={SVGICON.circlebigSvg2} alt=""/>
                 </section>  
-                <section className="content-inner-1 overflow-hidden" style={{backgroundImage: "url("+ IMAGES.BgImage1 +")"}}>
+                {/* <section className="content-inner-1 overflow-hidden" style={{backgroundImage: "url("+ IMAGES.BgImage1 +")"}}>
                     <LatestSlider />
-                </section>  
+                </section>   */}
                 <section className="call-action style-1 footer-action">
 			        <div className="container">
                         <NewsLetter />

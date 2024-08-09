@@ -7,31 +7,36 @@ import { MenuListArray2 } from "./MenuListArray2";
 
 const Header = () => {
   const [headerFix, setheaderFix] = React.useState(false);
+  const location = useLocation();
+
   useEffect(() => {
     window.addEventListener("scroll", () => {
       setheaderFix(window.scrollY > 50);
     });
   }, []);
+
+  const isHomePage = location.pathname === '/'
+
   return (
     <>
       <header className="site-header mo-left header header-transparent style-1">
         <div className="top-bar">
           <div className="container">
-            <div className="dz-topbar-inner d-flex justify-content-between align-items-center">
+            <div className="dz-topbar-inner d-flex justify-content-between align-items-center" style={{ color: 'white' }}>
               <div className="dz-topbar-left">
                 <ul>
-                  <li>
+                  <li style={{ color: isHomePage ? 'white' : 'black' }}>
                     <i className="fa-regular fa-envelope"></i> info@example.com
                   </li>
                 </ul>
               </div>
               <div className="dz-topbar-right">
                 <ul>
-                  <li>
+                  <li style={{ color: isHomePage ? 'white' : 'black' }}>
                     <i className="fa-regular fa-clock"></i> Time 06:00 AM To
                     08:00 PM
                   </li>{" "}
-                  <li>
+                  <li style={{ color: isHomePage ? 'white' : 'black' }}>
                     <i className="fa fa-phone"></i> +91-1234567890
                   </li>
                 </ul>
@@ -40,9 +45,8 @@ const Header = () => {
           </div>
         </div>
         <div
-          className={`sticky-header main-bar-wraper navbar-expand-lg ${
-            headerFix ? "is-fixed" : ""
-          }`}
+          className={`sticky-header main-bar-wraper navbar-expand-lg ${headerFix ? "is-fixed" : ""
+            }`}
         >
           <Mainheader />
         </div>
@@ -109,7 +113,7 @@ export const Mainheader = () => {
   }
   useMemo(AddActiveMenu, [location.pathname]);
 
-  
+
 
   return (
     <>
@@ -118,15 +122,14 @@ export const Mainheader = () => {
           <div className="box-header clearfix">
             {/* <!-- Website Logo --> */}
             <div className="logo-header mostion logo-dark">
-              <Link to={"/"}>
-                <img className="select_logo" src={IMAGES.logo} alt="" />
+              <Link to={"/"} style={{ padding: '10px 20px' }}>
+                <img className="select_logo" src={IMAGES.logo} alt="" height={40} width={40} style={{ zoom: '2' }} />
               </Link>
             </div>
 
             <button
-              className={`navbar-toggler navicon justify-content-end ${
-                sidebarOpen ? "open" : "collapsed"
-              }`}
+              className={`navbar-toggler navicon justify-content-end ${sidebarOpen ? "open" : "collapsed"
+                }`}
               type="button"
               onClick={() => setSidebarOpen(!sidebarOpen)}
             >
@@ -174,9 +177,8 @@ export const Mainheader = () => {
             {/* <!-- Header Nav --> */}
             <div
               id="navbarNavDropdown"
-              className={`header-nav navbar-collapse collapse justify-content-end ${
-                sidebarOpen ? "show" : ""
-              }`}
+              className={`header-nav navbar-collapse collapse justify-content-end ${sidebarOpen ? "show" : ""
+                }`}
             >
               <div className="logo-header logo-dark">
                 <Link to={"/"}>
@@ -189,9 +191,8 @@ export const Mainheader = () => {
                   if (menuClass !== "sub-menu-down") {
                     return (
                       <li
-                        className={`${menuClass} ${
-                          item.title === activeMenu ? "active" : ""
-                        }`}
+                        className={`${menuClass} ${item.title === activeMenu ? "active" : ""
+                          }`}
                         // className={`${ menuClass} ${ location.pathname == item.to ? 'active'  : '' }`}
 
                         key={index}
@@ -202,9 +203,8 @@ export const Mainheader = () => {
                   } else {
                     return (
                       <li
-                        className={`${menuClass} ${
-                          state.active === item.title ? "open active" : ""
-                        } ${item.title === activeMenu ? "active" : ""}`}
+                        className={`${menuClass} ${state.active === item.title ? "open active" : ""
+                          } ${item.title === activeMenu ? "active" : ""}`}
                         // <li className={`${ menuClass} ${ location.pathname == item.to ? 'active'  : '' }`}
                         key={index}
                       >
@@ -222,24 +222,22 @@ export const Mainheader = () => {
                               in={state.active === item.title ? true : false}
                             >
                               <ul
-                                className={`sub-menu ${
-                                  menuClass === "mm-collapse" ? "open" : ""
-                                }`}
+                                className={`sub-menu ${menuClass === "mm-collapse" ? "open" : ""
+                                  }`}
                               >
                                 {item.content &&
                                   item.content.map((data, index) => {
                                     return (
                                       <li
                                         key={index}
-                                        className={`${
-                                          state.activeSubmenu === data.title
-                                            ? "open"
-                                            : ""
-                                        }`}
-                                        //className={`${ menuClass} ${ location.pathname == data.to ? 'active'  : '' }`}
+                                        className={`${state.activeSubmenu === data.title
+                                          ? "open"
+                                          : ""
+                                          }`}
+                                      //className={`${ menuClass} ${ location.pathname == data.to ? 'active'  : '' }`}
                                       >
                                         {data.content &&
-                                        data.content.length > 0 ? (
+                                          data.content.length > 0 ? (
                                           <>
                                             <Link
                                               to={data.to}
@@ -253,17 +251,16 @@ export const Mainheader = () => {
                                             <Collapse
                                               in={
                                                 state.activeSubmenu ===
-                                                data.title
+                                                  data.title
                                                   ? true
                                                   : false
                                               }
                                             >
                                               <ul
-                                                className={`sub-menu ${
-                                                  menuClass === "mm-collapse"
-                                                    ? "open"
-                                                    : ""
-                                                }`}
+                                                className={`sub-menu ${menuClass === "mm-collapse"
+                                                  ? "open"
+                                                  : ""
+                                                  }`}
                                               >
                                                 {data.content &&
                                                   data.content.map(

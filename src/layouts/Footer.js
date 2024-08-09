@@ -16,11 +16,11 @@ const Footer = () => {
                                     <div className="footer-logo logo-dark">
                                         <Link to={"/"}><img className='select_logo_dark' src={IMAGES.logo} alt="" /></Link> 
                                     </div>
-                                    <p>A Wonderful Serenity Has Taken Possession Of My Entire Soul, Like These.</p>
+                                    <p>The ultimate fiitness den is roaring to have you here.</p>
                                     <h6 className="m-b15">Our Socials</h6>
                                     <div className="dz-social-icon style-1">
                                         <ul>									
-                                            <li>
+                                            {/* <li>
                                                 <Link target="_blank" to="https://www.facebook.com/" rel="noreferrer">
                                                     <i className="fab fa-facebook-f"></i>
                                                 </Link>
@@ -29,17 +29,17 @@ const Footer = () => {
                                                 <Link target="_blank" to="https://twitter.com/?lang=en" rel="noreferrer">
                                                     <i className="fab fa-twitter"></i>
                                                 </Link>
-                                            </li>{" "}
+                                            </li>{" "} */}
                                             <li>
-                                                <Link target="_blank" to="https://www.instagram.com/?hl=en" rel="noreferrer">
+                                                <Link target="_blank" to="https://www.instagram.com/bharatfiitnessden/?hl=en" rel="noreferrer">
                                                     <i className="fab fa-instagram"></i>
                                                 </Link>
                                             </li>{" "}
-                                            <li>
+                                            {/* <li>
                                                 <Link target="_blank" to="https://www.whatsapp.com/" rel="noreferrer">
                                                     <i className="fa-brands fa-whatsapp"></i>
                                                 </Link>
-                                            </li>
+                                            </li> */}
                                         </ul>
                                     </div>
                                 </div>
@@ -48,9 +48,9 @@ const Footer = () => {
                                 <div className="widget widget_locations">
                                     <h4 className="footer-title">Locations</h4>
                                     <div className="clearfix">
-                                        <h6>Washington</h6>
-                                        <p>1559 Alabama Ave SE, DC 20032, Washington, USA</p>
-                                        {SVGICON.map}
+                                        <h6>Bhubaneswar</h6>
+                                        <p>2nd and 4th Floor, Om Towers, Plot no 2297/2540, near District High Lounge, Doordarshan Colony, Jayadev Vihar, Bhubaneswar, Odisha 751013</p>
+                                        {/* {SVGICON.map} */}
                                     </div>
                                 </div>
                             </div>
@@ -80,7 +80,7 @@ const Footer = () => {
                 <div className="container">
                     <div className="footer-bottom">
                         <div className="text-center"> 
-                            <span className="copyright-text">Copyright © {update.getFullYear()} <Link to="https://dexignzone.com/" rel="noreferrer" target="_blank" >DexignZone</Link>. All rights reserved.</span> 
+                            <span className="copyright-text">Copyright © {update.getFullYear()} <Link to="/" rel="noreferrer" target="_blank" >IAMPIX</Link>. All rights reserved.</span> 
                         </div>
                     </div>
                 </div>

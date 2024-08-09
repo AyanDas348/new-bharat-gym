@@ -26,7 +26,7 @@ const ContactUs = () => {
         }
       );
     e.target.reset();
-    swal("Good job!", "form successfuly submmited", "success");
+    swal("Good job!", "Form submmited successfuly", "success");
   };
   return (
     <>
@@ -47,8 +47,7 @@ const ContactUs = () => {
                       <li>
                         <i className="fa-solid fa-location-dot"></i>
                         <p>
-                          832 Thompson Drive, San Fransisco CA 94107, United
-                          States
+                          2nd and 4th Floor, Om Towers, Plot no 2297/2540, near District High Lounge, Doordarshan Colony, Jayadev Vihar, Bhubaneswar, Odisha 751013
                         </p>
                       </li>
                       <li>
@@ -57,14 +56,14 @@ const ContactUs = () => {
                       </li>
                       <li>
                         <i className="fa-solid fa-envelope"></i>
-                        <p>support@BodyShape.com</p>
+                        <p>bharatfiitnessden@gmail.com</p>
                       </li>
                     </ul>
                   </div>
                   <h6 className="m-b15 text-white">Our Socials</h6>
                   <div className="dz-social-icon style-1 dark">
                     <ul>
-                      <li>
+                      {/* <li>
                         <Link
                           target="_blank"
                           to="https://www.facebook.com/"
@@ -72,17 +71,17 @@ const ContactUs = () => {
                         >
                           <i className="fab fa-facebook-f" />
                         </Link>
-                      </li>{" "}
+                      </li>{" "} */}
                       <li>
                         <Link
                           target="_blank"
-                          to="https://www.instagram.com/"
+                          to="https://www.instagram.com/bharatfiitnessden/?hl=en"
                           rel="noreferrer"
                         >
                           <i className="fab fa-instagram" />
                         </Link>
                       </li>{" "}
-                      <li>
+                      {/* <li>
                         <Link
                           target="_blank"
                           to="https://twitter.com/"
@@ -99,7 +98,7 @@ const ContactUs = () => {
                         >
                           <i className="fa-brands fa-whatsapp" />
                         </Link>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                   <svg
@@ -218,7 +217,7 @@ const ContactUs = () => {
           <div className="map-iframe">
             <iframe
               title="myFrame"
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28896.531392443423!2d75.81462525569334!3d25.133445080066668!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x537f208422eb8f28!2sW3ITEXPERTS%20-%20Software%20Development%20Company%20in%20kota!5e0!3m2!1sen!2sin!4v1669897446044!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.101966920967!2d85.8223759758277!3d20.296046112539734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19095279c3c499%3A0xa7e49b041fe1b03f!2sBharat%20Fiitness%20Den!5e0!3m2!1sen!2sin!4v1723206059925!5m2!1sen!2sin"
               style={{ border: "0", marginBottom: "-7px", width: "100%" }}
               allowFullScreen=""
               loading="lazy"

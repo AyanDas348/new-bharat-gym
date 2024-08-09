@@ -6,9 +6,9 @@ import { Navigation, Pagination } from "swiper/modules";
 import { IMAGES } from "../constants/theme";
 
 const dataBlog = [
-  { image: IMAGES.avatarlarge1 },
-  { image: IMAGES.avatarlarge2 },
-  { image: IMAGES.avatarlarge3 },
+  { image: IMAGES.avatarlarge1, desc: "I've been a member of this gym for over a year, and the experience has been transformative. The trainers are incredibly knowledgeable, and the facilities are top-notch. I’ve seen a huge improvement in my strength and endurance, and I love the supportive community here. Highly recommend!", name: 'Punyaslok Panda' },
+  { image: IMAGES.avatarlarge2, desc: "Joining this gym was the best decision I’ve ever made for my health. The equipment is always clean and in great condition, and the staff is friendly and supportive. I appreciate the variety of classes offered, from yoga to high-intensity interval training. It’s made working out something I actually look forward to!", name: 'Ayan Das'},
+  { image: IMAGES.avatarlarge3, desc: "As someone who was new to working out, I was nervous about joining a gym. But the staff here made me feel welcome from day one. The personal training sessions have been incredibly helpful in teaching me the basics and keeping me motivated. I’m seeing great results and couldn’t be happier!", name: 'Arnav Acharya' },
 ];
 
 function ClientSlider() {
@@ -26,9 +26,9 @@ function ClientSlider() {
         speed={1500}
         pagination={{
           el: ".swiper-pagination",
-          
+
           clickable: true,
-          renderBullet: function (index, className) {            
+          renderBullet: function (index, className) {
             return (
               '<span class="' + className + '"> 0' + (index + 1) + "</span>"
             );
@@ -73,15 +73,11 @@ function ClientSlider() {
               </ul>
               <div className="testimonial-info">
                 <p className="testimonial-text">
-                  Taking seamless key performance indicators offline to maximise
-                  the long tail. Keeping your eye on the ball while performing a
-                  deep dive. Completely synergize resource taxing relationships
-                  via premier niche markets. Professionally cultivate one-to-one
-                  customer.
+                  {item.desc}
                 </p>
-                <h4 className="testimonial-name">Richard Hartisona</h4>
+                <h4 className="testimonial-name">{item.name}</h4>
                 <span className="testimonial-position text-primary">
-                  Founder
+                  Member
                 </span>
               </div>
             </div>
