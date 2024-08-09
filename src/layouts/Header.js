@@ -66,6 +66,10 @@ export const Mainheader = () => {
   const location = useLocation();
 
   useEffect(() => {
+    setSidebarOpen(false)
+  }, [location.pathname])
+
+  useEffect(() => {
     var mainMenu = document.getElementById("OpenMenu");
     if (mainMenu) {
       if (sidebarOpen) {
@@ -123,13 +127,14 @@ export const Mainheader = () => {
             {/* <!-- Website Logo --> */}
             <div className="logo-header mostion logo-dark">
               <Link to={"/"} style={{ padding: '10px 20px' }}>
-                <img className="select_logo" src={IMAGES.logo} alt="" height={40} width={40} style={{ zoom: '2' }} />
+                <img className="select_logo" src={IMAGES.logo} alt="" height={40} width={40} style={{ zoom: '2', height: '40px', width: '40px' }} />
               </Link>
             </div>
 
             <button
               className={`navbar-toggler navicon justify-content-end ${sidebarOpen ? "open" : "collapsed"
                 }`}
+              style={{ visibility: sidebarOpen ? 'hidden' : '' }}
               type="button"
               onClick={() => setSidebarOpen(!sidebarOpen)}
             >
@@ -180,10 +185,21 @@ export const Mainheader = () => {
               className={`header-nav navbar-collapse collapse justify-content-end ${sidebarOpen ? "show" : ""
                 }`}
             >
-              <div className="logo-header logo-dark">
+              <div className="logo-header logo-dark" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                 <Link to={"/"}>
-                  <img src={IMAGES.logo} alt="" />
+                  <img src={IMAGES.logo} alt="" style={{ width: '40px', height: '40px', zoom: '2' }} />
                 </Link>
+                <button
+                  className={`navicon justify-content-center ${sidebarOpen ? "open" : "collapsed"
+                    }`}
+                  style={{ visibility: sidebarOpen ? '' : 'hidden', color: '#FF8139', border: 'none' }}
+                  type="button"
+                  onClick={() => setSidebarOpen(!sidebarOpen)}
+                >
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
               </div>
               <ul className="nav navbar-nav navbar navbar-left">
                 {MenuListArray2.map((item, index) => {
