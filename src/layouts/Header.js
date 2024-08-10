@@ -187,7 +187,7 @@ export const Mainheader = () => {
             >
               <div className="logo-header logo-dark" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                 <Link to={"/"}>
-                  <img src={IMAGES.logo} alt="" style={{ width: '40px', height: '40px', zoom: '2' }} />
+                  <img src={IMAGES.logo} alt="" style={{ width: '40px', height: '40px', zoom: '2', visibility: sidebarOpen ? '' : 'hidden' }} />
                 </Link>
                 <button
                   className={`navicon justify-content-center ${sidebarOpen ? "open" : "collapsed"

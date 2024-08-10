@@ -40,7 +40,7 @@ const Services = () => {
                                         <div className="icon-content">
                                             <h5 className="dz-title m-b10"><Link to={"#"}>{item.title}</Link></h5>
                                             <p className="m-b25">Aliquam sit amet volutpat sem, eget aliquet odio. Integer lobortis sed.</p>
-                                            <div className="btn btn-primary shadow-primary btn-skew"><span>Read More</span></div>
+                                            {/* <div className="btn btn-primary shadow-primary btn-skew"><span>Read More</span></div> */}
                                         </div>
                                     </div>
                                 </div>
@@ -71,14 +71,14 @@ const Services = () => {
                         <ClientSlider />
 
                     </div>
-                    <div className="avatar1"><img src={IMAGES.avatarlarge1} alt=""/></div>
-                    <div className="avatar2"><img src={IMAGES.avatarlarge2} alt=""/></div>
-                    <div className="avatar3"><img src={IMAGES.avatar3} alt=""/></div>
-                    <div className="avatar4"><img src={IMAGES.avatarlarge1} alt=""/></div>
-                    <div className="avatar5"><img src={IMAGES.avatarlarge2} alt=""/></div>
-                    <div className="avatar6"><img src={IMAGES.avatar3} alt=""/></div>
-                    <img className="svg-shape rotate-360" src={SVGICON.circlebigSvg1} alt=""/>
-                    <img className="svg-shape-2 rotate-360" src={SVGICON.circlebigSvg2} alt=""/>
+                    {/* <div className="avatar1"><img src={IMAGES.avatarlarge1} alt=""/></div> */}
+                    {/* <div className="avatar2"><img src={IMAGES.avatarlarge2} alt=""/></div> */}
+                    {/* <div className="avatar3"><img src={IMAGES.avatar3} alt=""/></div> */}
+                    {/* <div className="avatar4"><img src={IMAGES.avatarlarge1} alt=""/></div> */}
+                    {/* <div className="avatar5"><img src={IMAGES.avatarlarge2} alt=""/></div> */}
+                    {/* <div className="avatar6"><img src={IMAGES.avatar3} alt=""/></div> */}
+                    {/* <img className="svg-shape rotate-360" src={SVGICON.circlebigSvg1} alt=""/> */}
+                    {/* <img className="svg-shape-2 rotate-360" src={SVGICON.circlebigSvg2} alt=""/> */}
                 </section>  
                 {/* <section className="content-inner-1 overflow-hidden" style={{backgroundImage: "url("+ IMAGES.BgImage1 +")"}}>
                     <LatestSlider />

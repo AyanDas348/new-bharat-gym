@@ -20,7 +20,7 @@ const DzInfo1 = ({ title, subtitle, desc }) => {
                     <span className="text-primary subtitle">{title}</span>
                     <h4 className="title text-white">{subtitle}</h4>
                     <p>{desc}</p>
-                    <div className="btn btn-primary btn-skew"><span>Read More</span></div>
+                    {/* <div className="btn btn-primary btn-skew"><span>Read More</span></div> */}
                 </div>
             </div>
         </div>
@@ -35,7 +35,7 @@ const DzInfo2 = ({ title, subtitle, desc }) => {
                     <span className="subtitle">{title}</span>
                     <h4 className="title theme-text-color">{subtitle}</h4>
                     <p>{desc}</p>
-                    <div className="btn btn-secondary btn-skew"><span>Read More</span></div>
+                    {/* <div className="btn btn-secondary btn-skew"><span>Read More</span></div> */}
                 </div>
             </div>
         </div>
@@ -47,12 +47,12 @@ const FitnessTraining = () => {
         <>
             <div className="row g-0">
                 <DzInfo1 title="BODY SHAPE" subtitle="CROSSFIT" />
-                <DzMedia Image={IMAGES.services1} />
+                <DzMedia Image={IMAGES.portfolio1} />
                 <DzInfo2 title="RELAX PROGRAM" subtitle="BODY BALANCE" />
-                <DzMedia Image={IMAGES.services3} />
-                <DzMedia Image={IMAGES.services4} />
+                <DzMedia Image={IMAGES.portfolio2} />
+                <DzMedia Image={IMAGES.portfolio3} />
                 <DzInfo2 title="CARDIO WORKFLOW" subtitle="CARDIO" />
-                <DzMedia Image={IMAGES.services2} />
+                <DzMedia Image={IMAGES.portfolio4} />
                 <DzInfo1 title="POWER-PRO" subtitle="WEIGHT LIFTING" />
             </div>
         </>

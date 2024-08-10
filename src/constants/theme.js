@@ -171,6 +171,10 @@ export const IMAGES = {
   clientLogo6: require("../assets/images/client-logo/logo6.png"),
 
   mainSliderPic1: require("../assets/images/portfolio/GYM INTERIOR_1.11.1.jpg"),
+  mainSliderPic2: require("../assets/images/portfolio/GYM INTERIOR_1.15.1.jpg"),
+  mainSliderPic3: require("../assets/images/portfolio/GYM INTERIOR_1.31.1.jpg"),
+  mainSliderPic4: require("../assets/images/portfolio/GYM INTERIOR_1.32.1.jpg"),
+  mainSliderPic5: require("../assets/images/portfolio/GYM INTERIOR_1.39.1.jpg"),
   miniSlidePic1: require("../assets/images/main-slider/slider3/pic1.jpg"),
 
   beforeimg: require("../assets/images/after-before/before.jpg"),

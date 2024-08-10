@@ -25,7 +25,7 @@ const AboutUs = () => {
                         <FitnessTraining />
                     </div>
                 </section>
-                <section className="content-inner" style={{backgroundImage: "url(" + IMAGES.BgImage1 + ")"}}>
+                {/* <section className="content-inner" style={{backgroundImage: "url(" + IMAGES.BgImage1 + ")"}}>
                     <div className="container">
                         <div className="section-head text-center">
                             <span className="sub-title">Training Programmes</span>
@@ -35,7 +35,7 @@ const AboutUs = () => {
                             <ScheduleTable />
                         </div>
                     </div>
-                </section>
+                </section> */}
                 <section className="content-inner portfolio-wrapper">
                     <div className="portfolio-wrapper-inner">
                         <div className="container-fluid  p-0">
