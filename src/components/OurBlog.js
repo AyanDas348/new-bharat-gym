@@ -106,7 +106,7 @@ const OurBlog = () => {
                     to="/blog-details"
                     className="btn rounded-0 btn-primary btn-skew"
                   >
-                    <span>Read More</span>
+                    {/* <span>Read More</span> */}
                   </Link>
                 </div>
               </div>

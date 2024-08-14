@@ -1,30 +1,31 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-import { IMAGES,SVGICON } from '../constants/theme';
+import { Link } from 'react-router-dom';
+import { IMAGES, SVGICON } from '../constants/theme';
 
 
 const Footer = () => {
     let update = new Date();
     return (
         <>
-            <footer className="site-footer style-1 bg-img-fix footer-action" style={{backgroundImage: "url("+ IMAGES.footerbg +")"}} id="footer">
+            <footer className="site-footer style-1 bg-img-fix footer-action" style={{ backgroundImage: "url(" + IMAGES.footerbg + ")" }} id="footer">
                 <div className="footer-top">
                     <div className="container">
                         <div className="row">
                             <div className="col-xl-3 col-md-12">
                                 <div className="widget widget_about">
                                     <div className="footer-logo logo-dark">
-                                        <Link to={"/"}><img className='select_logo_dark' src={IMAGES.logo} alt="" /></Link> 
+                                        <Link to={"/"}><img className='select_logo_dark' src={IMAGES.logo} alt="" /></Link>
                                     </div>
                                     <p>The ultimate fiitness den is roaring to have you here.</p>
                                     <h6 className="m-b15">Our Socials</h6>
                                     <div className="dz-social-icon style-1">
-                                        <ul>									
-                                            {/* <li>
+                                        <ul>
+                                            <li>
                                                 <Link target="_blank" to="https://www.facebook.com/" rel="noreferrer">
                                                     <i className="fab fa-facebook-f"></i>
                                                 </Link>
                                             </li>{" "}
+                                            {/* 
                                             <li>
                                                 <Link target="_blank" to="https://twitter.com/?lang=en" rel="noreferrer">
                                                     <i className="fab fa-twitter"></i>
@@ -60,17 +61,17 @@ const Footer = () => {
                                     <ul>
                                         <li>
                                             <span className="days">Monday – Friday:</span>
-                                            <span className="time"><Link to={"/schedule"}>07:00 – 21:00</Link></span>
+                                            {/* <span className="time"><Link to={"/schedule"}>07:00 – 21:00</Link></span> */}
                                         </li>
                                         <li>
                                             <span className="days">Saturday:</span>
-                                            <span className="time"><Link to={"/schedule"}>07:00 – 16:00</Link></span>
+                                            {/* <span className="time"><Link to={"/schedule"}>07:00 – 16:00</Link></span> */}
                                         </li>
                                         <li>
                                             <span className="days">Sunday Closed:</span>
                                         </li>
                                     </ul>
-                                    <Link to={"/schedule"} className="btn-link" >More Here <i className="fa-solid fa-arrow-right m-l10"></i></Link>
+                                    {/* <Link to={"/schedule"} className="btn-link" >More Here <i className="fa-solid fa-arrow-right m-l10"></i></Link> */}
                                 </div>
                             </div>
                         </div>
@@ -79,8 +80,8 @@ const Footer = () => {
                 {/* <!-- Footer Bottom Part --> */}
                 <div className="container">
                     <div className="footer-bottom">
-                        <div className="text-center"> 
-                            <span className="copyright-text">Copyright © {update.getFullYear()} <Link to="/" rel="noreferrer" target="_blank" >IAMPIX</Link>. All rights reserved.</span> 
+                        <div className="text-center">
+                            <span className="copyright-text">Copyright © {update.getFullYear()} <Link to="/" rel="noreferrer" target="_blank" >IAMPIX</Link>. All rights reserved.</span>
                         </div>
                     </div>
                 </div>

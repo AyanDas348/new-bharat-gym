@@ -26,7 +26,7 @@ const Header = () => {
               <div className="dz-topbar-left">
                 <ul>
                   <li style={{ color: isHomePage ? 'white' : 'black' }}>
-                    <i className="fa-regular fa-envelope"></i> info@example.com
+                    <i className="fa-regular fa-envelope"></i> sales@bharatsfitnessden.com
                   </li>
                 </ul>
               </div>
@@ -37,7 +37,7 @@ const Header = () => {
                     08:00 PM
                   </li>{" "}
                   <li style={{ color: isHomePage ? 'white' : 'black' }}>
-                    <i className="fa fa-phone"></i> +91-1234567890
+                    <i className="fa fa-phone"></i> +91 8339901557
                   </li>
                 </ul>
               </div>

@@ -27,10 +27,10 @@ export const MenuListArray2 = [
                 title: 'Pricing',
                 to: '/pricing',
             },
-            {
-                title: 'Schedule',
-                to: '/schedule',
-            },
+            // {
+            //     title: 'Schedule',
+            //     to: '/schedule',
+            // },
         ],
     },
 ]

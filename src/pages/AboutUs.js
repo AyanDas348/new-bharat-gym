@@ -36,7 +36,7 @@ const AboutUs = () => {
                         </div>
                     </div>
                 </section> */}
-                <section className="content-inner portfolio-wrapper">
+                {/* <section className="content-inner portfolio-wrapper">
                     <div className="portfolio-wrapper-inner">
                         <div className="container-fluid  p-0">
                             <WorkoutSlider />
@@ -48,7 +48,7 @@ const AboutUs = () => {
                     <svg className="shape-down" width="673" height="109" viewBox="0 0 673 109" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M682 0L0 56L682 109V0Z" fill="var(--primary)"/>
                     </svg>
-                </section>
+                </section> */}
                 {/* <section className="content-inner-1 overflow-hidden" style={{backgroundImage: "url("+IMAGES.BgImage1 +")"}}>			        
                     <LatestSlider />
                 </section> */}

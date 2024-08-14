@@ -48,9 +48,9 @@ const IconBox = () => {
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry.
                 </p>
-                <Link to="/team" className="read-more">
+                {/* <Link to="/team" className="read-more">
                   Read More <i className="fa-solid fa-arrow-right"></i>
-                </Link>
+                </Link> */}
               </div>
               <div className="badge">
                 {" "}

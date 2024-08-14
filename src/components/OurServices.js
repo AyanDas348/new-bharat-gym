@@ -37,7 +37,7 @@ const OurServices = () => {
                                 </div>
                                 <div className="icon-content">
                                     <p className="m-b15">Lorem Ipsum is simply dummy of the printing and typesetting industry. Lorem Ipsum has</p>
-                                    <Link to="/pricing" className="read-more">Read More <i className="fa-solid fa-arrow-right"></i></Link>
+                                    {/* <Link to="/pricing" className="read-more">Read More <i className="fa-solid fa-arrow-right"></i></Link> */}
                                 </div>
                             </div>
                         </div>
@@ -63,7 +63,7 @@ const OurServices = () => {
                                 </div>
                                 <div className="icon-content">
                                     <p className="m-b15">Lorem Ipsum is simply dummy of the printing and typesetting industry. Lorem Ipsum has</p>
-                                    <Link to="/pricing" className="read-more">Read More <i className="fa-solid fa-arrow-right"></i></Link>
+                                    {/* <Link to="/pricing" className="read-more">Read More <i className="fa-solid fa-arrow-right"></i></Link> */}
                                 </div>
                             </div>
                         </div>

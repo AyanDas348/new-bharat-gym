@@ -48,7 +48,7 @@ const BlogGrid = () => {
                                             </div>
                                             <h4 className="dz-title"><Link to={"/blog-details"}>{data.title}</Link></h4>
                                             <p>A wonderful serenity has taken of my entire soul, like these.</p>
-                                            <Link to={"/blog-details"} className="btn btn-primary btn-skew"><span>Read More</span></Link>
+                                            {/* <Link to={"/blog-details"} className="btn btn-primary btn-skew"><span>Read More</span></Link> */}
                                         </div>
                                     </div>
                                 </div>
@@ -79,7 +79,7 @@ const BlogGrid = () => {
                                         </div>
                                         <h4 className="dz-title"><Link to={"/blog-details"}>Easy Ways To Make Fitness Faster.</Link></h4>
                                         <p>A wonderful serenity has taken of my entire soul, like these.</p>
-                                        <Link to={"/blog-details"} className="btn btn-primary btn-skew"><span>Read More</span></Link>
+                                        {/* <Link to={"/blog-details"} className="btn btn-primary btn-skew"><span>Read More</span></Link> */}
                                     </div>
                                 </div>
                             </div>
@@ -103,7 +103,7 @@ const BlogGrid = () => {
                                             </div>
                                             <h4 className="dz-title"><Link to={"/blog-details"}>{data.title}</Link></h4>
                                             <p>A wonderful serenity has taken of my entire soul, like these.</p>
-                                            <Link to={"/blog-details"} className="btn btn-primary btn-skew"><span>Read More</span></Link>
+                                            {/* <Link to={"/blog-details"} className="btn btn-primary btn-skew"><span>Read More</span></Link> */}
                                         </div>
                                     </div>
                                 </div>
@@ -125,7 +125,7 @@ const BlogGrid = () => {
                                         </div>
                                         <h4 className="dz-title"><Link to={"/blog-details"}>Workout Exercises for Fat Loss.</Link></h4>
                                         <p>A wonderful serenity has taken of my entire soul, like these.</p>
-                                        <Link to={"/blog-details"} className="btn btn-primary btn-skew"><span>Read More</span></Link>
+                                        {/* <Link to={"/blog-details"} className="btn btn-primary btn-skew"><span>Read More</span></Link> */}
                                     </div>
                                 </div>
                             </div>

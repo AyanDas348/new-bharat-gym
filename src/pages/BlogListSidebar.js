@@ -42,7 +42,7 @@ const BlogListSidebar = () => {
                                                     </div>
                                                     <h4 className="dz-title"><Link to={"/blog-details"}>{item.title}</Link></h4>
                                                     <p>Donec accumsan enim sit amet dolor rhoncus scelerisque. Suspendisse interdum facilisis.</p>
-                                                    <Link to={"/blog-details"} className="btn btn-sm btn-primary btn-skew"><span>READ MORE</span></Link>
+                                                    {/* <Link to={"/blog-details"} className="btn btn-sm btn-primary btn-skew"><span>READ MORE</span></Link> */}
                                                 </div>
                                             </div>
                                         </div>

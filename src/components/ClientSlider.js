@@ -51,9 +51,9 @@ function ClientSlider() {
         {dataBlog.map((item, ind) => (
           <SwiperSlide key={ind}>
             <div className="testimonial-1">
-              <div className="testimonial-pic">
+              {/* <div className="testimonial-pic">
                 <img src={item.image} alt="" />
-              </div>
+              </div> */}
               <ul className="testimonial-rating">
                 <li>
                   <i className="fa-solid fa-star"></i>

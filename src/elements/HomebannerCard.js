@@ -30,9 +30,9 @@ const HomebannerCard = () => {
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry.
                 </p>
-                <Link to="/pricing" className="read-more">
+                {/* <Link to="/pricing" className="read-more">
                   Read More <i className="fa-solid fa-arrow-right"></i>
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>

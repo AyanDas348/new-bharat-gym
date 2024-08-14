@@ -7,16 +7,39 @@ import NewsLetter from '../elements/NewsLetter';
 import PageTitle from '../elements/PageTitle';
 import WorkoutSlider from '../elements/WorkoutSlider';
 
-const  wrapperBlog = [
-    {title:"Right Nutrition", image:IMAGES.boxlog1},
-    {title:"Health & Fitness", image:IMAGES.boxlog2},
-    {title:"Gym & Exercise", image:IMAGES.boxlog3},
-    {title:"Health Motivation", image:IMAGES.boxlog4},
-    {title:"Healthy Heart", image:IMAGES.boxlog5},
-    {title:"Smoothie & Juice", image:IMAGES.boxlog6},
-    {title:"Yoga & Exercise", image:IMAGES.boxlog7},
-    {title:"Health Motivation", image:IMAGES.boxlog8},
+const wrapperBlog = [
+    {
+        title: "Right Nutrition",
+        image: IMAGES.boxlog1,
+        description: "Discover the essential nutrients your body needs to thrive and how to incorporate them into your daily diet."
+    },
+    {
+        title: "Health & Fitness",
+        image: IMAGES.boxlog2,
+        description: "Explore the latest fitness trends and tips to maintain a healthy, active lifestyle."
+    },
+    {
+        title: "Gym & Exercise",
+        image: IMAGES.boxlog3,
+        description: "Get the most out of your workouts with expert advice on exercises and gym routines."
+    },
+    {
+        title: "Health Motivation",
+        image: IMAGES.boxlog4,
+        description: "Stay inspired and motivated on your health journey with our collection of motivational tips and stories."
+    },
+    {
+        title: "Healthy Heart",
+        image: IMAGES.boxlog5,
+        description: "Learn how to keep your heart healthy with diet, exercise, and lifestyle changes."
+    },
+    {
+        title: "Yoga & Exercise",
+        image: IMAGES.boxlog7,
+        description: "Find peace and balance with our yoga routines designed for all levels."
+    },
 ];
+
 
 const Services = () => {
     const [hover, setHover] = useState(0);
@@ -28,7 +51,7 @@ const Services = () => {
                     <div className="container">
                         <div className="row">
                             {wrapperBlog.map((item, index)=>(
-                                <div className="col-xl-3 col-md-6 m-b30" key={index}>
+                                <div className="col-xl-4 col-md-6 m-b30" key={index}>
                                     <div class={`icon-bx-wraper style-1 box-hover ${hover === index ? 'active' : ''}`}
                                         onMouseEnter={()=>setHover(index)}
                                     >
@@ -39,7 +62,7 @@ const Services = () => {
                                         </div>
                                         <div className="icon-content">
                                             <h5 className="dz-title m-b10"><Link to={"#"}>{item.title}</Link></h5>
-                                            <p className="m-b25">Aliquam sit amet volutpat sem, eget aliquet odio. Integer lobortis sed.</p>
+                                            <p className="m-b25">{item.title}</p>
                                             {/* <div className="btn btn-primary shadow-primary btn-skew"><span>Read More</span></div> */}
                                         </div>
                                     </div>
@@ -49,7 +72,7 @@ const Services = () => {
                         </div>    
                     </div>
                 </section>
-                <section className="content-inner portfolio-wrapper">
+                {/* <section className="content-inner portfolio-wrapper">
 			        <div className="portfolio-wrapper-inner">
 				        <div className="container-fluid  p-0">
                             <WorkoutSlider />                
@@ -61,7 +84,7 @@ const Services = () => {
                     <svg className="shape-down" width="673" height="109" viewBox="0 0 673 109" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M682 0L0 56L682 109V0Z" fill="var(--primary)"/>
                     </svg>      
-                </section>
+                </section> */}
                 <section className="content-inner-1 testimonial-wrapper1" data-text="FEEDBACK" style={{backgroundImage: "url("+ IMAGES.BgImage2 +")", backgroundPosition: "center"}}>
                     <div className="container">
                         <div className="section-head text-center">
@@ -83,11 +106,11 @@ const Services = () => {
                 {/* <section className="content-inner-1 overflow-hidden" style={{backgroundImage: "url("+ IMAGES.BgImage1 +")"}}>
                     <LatestSlider />
                 </section>   */}
-                <section className="call-action style-1 footer-action">
+                {/* <section className="call-action style-1 footer-action">
 			        <div className="container">
                         <NewsLetter />
                     </div>
-                </section>
+                </section> */}
             </div>   
         </>
     );

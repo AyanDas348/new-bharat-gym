@@ -145,9 +145,9 @@ function LatestSlider() {
                 <p>
                   A wonderful serenity has taken of my entire soul, like these.
                 </p>
-                <Link to={"/blog-details"} className="btn btn-primary btn-skew">
+                {/* <Link to={"/blog-details"} className="btn btn-primary btn-skew">
                   <span>Read More</span>
-                </Link>
+                </Link> */}
               </div>
             </div>
           </SwiperSlide>

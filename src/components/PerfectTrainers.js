@@ -12,7 +12,7 @@ const iconBox = [
 const PerfectTrainers = () => {
     return (
         <>
-            <div className="col-lg-6 m-b30">
+            {/* <div className="col-lg-6 m-b30">
                 <div className="dz-media ">
                     <img src={IMAGES.aboutgirl} alt="" className="wow fadeInUp" data-wow-delay="0.6s" />
                     {SVGICON.multilines}
@@ -22,7 +22,7 @@ const PerfectTrainers = () => {
                         <li></li>
                     </ul>
                 </div>
-            </div>
+            </div> */}
             <div className="col-lg-6 m-b30 about-content">
                 <div className="section-head">
                     <span className="sub-title wow fadeInUp" data-wow-delay="0.2s">Get Your Perfect Workout</span>

@@ -45,7 +45,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <section className="counter-wrapper1">
+        {/* <section className="counter-wrapper1">
           <div className="container">
             <div className="counter-inner bg-dark">
               <div className="row">
@@ -111,8 +111,8 @@ const Home = () => {
               alt="man"
             />
           </div>
-        </section>
-        <section
+        </section> */}
+        {/* <section
           className="content-inner about-wrapper2"
           style={{
             backgroundImage: "url(" + IMAGES.BgImage3 + ")",
@@ -125,7 +125,7 @@ const Home = () => {
               <FitnessGoal isOpenModal={setOpen} />
             </div>
           </div>
-        </section>
+        </section> */}
         <section
           className="content-inner overflow-hidden"
           style={{ backgroundImage: "url(" + IMAGES.BgImage1 + ")" }}
@@ -200,7 +200,7 @@ const Home = () => {
             </div>
             <ClientSlider />
           </div>
-          <div className="avatar1">
+          {/* <div className="avatar1">
             <img src={IMAGES.avatarlarge1} alt="" />
           </div>
           <div className="avatar2">
@@ -227,7 +227,7 @@ const Home = () => {
             className="svg-shape-2 rotate-360"
             src={SVGICON.circlebigSvg2}
             alt=""
-          />
+          /> */}
         </section>
         {/* <section
           className="content-inner-1 overflow-hidden"
@@ -248,11 +248,11 @@ const Home = () => {
             title="unique"
           ></iframe>
         </div>
-        <section className="call-action style-1 footer-action">
+        {/* <section className="call-action style-1 footer-action">
           <div className="container">
             <NewsLetter />
           </div>
-        </section>
+        </section> */}
       </div>
       {/* <ModalVideo
         channel="youtube"

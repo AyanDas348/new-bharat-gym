@@ -5,9 +5,9 @@ import NewsLetter from '../elements/NewsLetter';
 import PageTitle from '../elements/PageTitle';
 
 const pricingPlans = [
-    { rate: '2400', title: 'Basic', prime: 'premium' },
-    { rate: '1800', title: 'Standard', billed: 'billed bi-annualy' },
-    { rate: '1600', title: 'Pro', billed: 'billed anually' },
+    { rate: '3000', title: 'Basic', prime: 'premium', time: ' Month' },
+    { rate: '10000', title: 'Standard', time: '6 Months' },
+    { rate: '14500', title: 'Pro', time: 'Year' },
 ];
 
 const Pricing = () => {
@@ -28,10 +28,10 @@ const Pricing = () => {
                                             <div className={`pricingtable-title ${plan.prime}`} >{plan.title}</div>
 
                                             <div className="pricingtable-price">
-                                                <h2 className="pricingtable-bx text-primary"><small>INR</small> {plan.rate}<small>/ Month</small></h2>
-                                                {!plan.prime && (
+                                                <h2 className="pricingtable-bx text-primary" style={{fontSize: '42px'}}><small>INR</small> {plan.rate}<small>/ {plan.time}</small></h2>
+                                                {/* {!plan.prime && (
                                                     <p>{plan.billed}</p>
-                                                )}
+                                                )} */}
                                                 <p>Get access to top-notch facilities and training</p>
                                             </div>
                                             <ul className="pricingtable-features">

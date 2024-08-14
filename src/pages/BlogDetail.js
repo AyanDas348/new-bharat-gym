@@ -120,7 +120,7 @@ const BlogDetail = () => {
                                                 </div>
                                                 <h5 className="dz-title"><Link to={"/blog-details"}>How to keep your Body.</Link></h5>
                                                 <p>A wonderful serenity has taken of my entire soul, like these.</p>
-                                                <Link to={"#"} className="btn btn-primary btn-skew"><span>Read More</span></Link>
+                                                {/* <Link to={"#"} className="btn btn-primary btn-skew"><span>Read More</span></Link> */}
                                             </div>
                                         </div>
                                     </div>
@@ -143,7 +143,7 @@ const BlogDetail = () => {
                                                 </div>
                                                 <h5 className="dz-title"><Link to={"/blog-details"}>The Philosophy Of Fitness.</Link></h5>
                                                 <p>A wonderful serenity has taken of my entire soul, like these.</p>
-                                                <Link to={"#"} className="btn btn-primary btn-skew"><span>Read More</span></Link>
+                                                {/* <Link to={"#"} className="btn btn-primary btn-skew"><span>Read More</span></Link> */}
                                             </div>
                                         </div>
                                     </div>

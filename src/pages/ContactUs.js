@@ -1,33 +1,44 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import swal from "sweetalert";
 import NewsLetter from "../elements/NewsLetter";
 import PageTitle from "../elements/PageTitle";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 const ContactUs = () => {
   const form = useRef();
-  const sendEmail = (e) => {
-    e.preventDefault();
-    //emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_USER_ID')
-    emailjs
-      .sendForm(
-        "service_gfykn6i",
-        "template_iy1pb0b",
-        e.target,
-        "HccoOtZS6GHw-N-m6"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    e.target.reset();
-    swal("Good job!", "Form submmited successfuly", "success");
+  const [formData, setFormData] = useState({
+    dzFirstName: "",
+    dzLastName: "",
+    dzEmail: "",
+    dzPhoneNumber: "",
+    dzMessage: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
   };
+
+  const sendEmail = async (e) => {
+    e.preventDefault();
+    // You can uncomment the following line when you're ready to use EmailJS
+    // emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_USER_ID')
+    const payload = {
+      name: formData.dzFirstName + ' ' + formData.dzLastName,
+      email: formData.dzEmail,
+      phone: formData.dzPhoneNumber,
+      message: formData.dzMessage,
+    }
+    const request = await axios.post('https://earth-again-server.onrender.com/send-email', payload);
+    e.target.reset();
+    swal("Good job!", "Form submitted successfully", "success");
+  };
+
   return (
     <>
       <div className="page-content bg-white">
@@ -42,7 +53,7 @@ const ContactUs = () => {
                     Fill up the form and our Team will get back to you within 24
                     hours.
                   </p>
-                  <div className="widget widget_getintuch ">
+                  <div className="widget widget_getintuch">
                     <ul>
                       <li>
                         <i className="fa-solid fa-location-dot"></i>
@@ -52,26 +63,26 @@ const ContactUs = () => {
                       </li>
                       <li>
                         <i className="fa-solid fa-phone"></i>
-                        <p>111-222-3333</p>
+                        <p>8339901557</p>
                       </li>
                       <li>
                         <i className="fa-solid fa-envelope"></i>
-                        <p>bharatfiitnessden@gmail.com</p>
+                        <p>sales@bharatsfitnessden.com</p>
                       </li>
                     </ul>
                   </div>
                   <h6 className="m-b15 text-white">Our Socials</h6>
                   <div className="dz-social-icon style-1 dark">
                     <ul>
-                      {/* <li>
+                      <li>
                         <Link
                           target="_blank"
-                          to="https://www.facebook.com/"
+                          to="https://www.facebook.com/share/vH3GofuJACZfMY3G/?mibextid=qi2Omg"
                           rel="noreferrer"
                         >
                           <i className="fab fa-facebook-f" />
                         </Link>
-                      </li>{" "} */}
+                      </li>{" "}
                       <li>
                         <Link
                           target="_blank"
@@ -81,24 +92,6 @@ const ContactUs = () => {
                           <i className="fab fa-instagram" />
                         </Link>
                       </li>{" "}
-                      {/* <li>
-                        <Link
-                          target="_blank"
-                          to="https://twitter.com/"
-                          rel="noreferrer"
-                        >
-                          <i className="fab fa-twitter" />
-                        </Link>
-                      </li>{" "}
-                      <li>
-                        <Link
-                          target="_blank"
-                          to="https://whatsapp.com/"
-                          rel="noreferrer"
-                        >
-                          <i className="fa-brands fa-whatsapp" />
-                        </Link>
-                      </li> */}
                     </ul>
                   </div>
                   <svg
@@ -150,6 +143,8 @@ const ContactUs = () => {
                           type="text"
                           className="form-control"
                           placeholder="First Name"
+                          value={formData.dzFirstName}
+                          onChange={handleChange}
                         />
                       </div>
                     </div>
@@ -161,6 +156,8 @@ const ContactUs = () => {
                           type="text"
                           className="form-control"
                           placeholder="Last Name"
+                          value={formData.dzLastName}
+                          onChange={handleChange}
                         />
                       </div>
                     </div>
@@ -169,9 +166,11 @@ const ContactUs = () => {
                         <input
                           name="dzEmail"
                           required
-                          type="text"
+                          type="email"
                           className="form-control"
                           placeholder="Your Email Address"
+                          value={formData.dzEmail}
+                          onChange={handleChange}
                         />
                       </div>
                     </div>
@@ -183,6 +182,8 @@ const ContactUs = () => {
                           type="text"
                           className="form-control"
                           placeholder="Phone"
+                          value={formData.dzPhoneNumber}
+                          onChange={handleChange}
                         />
                       </div>
                     </div>
@@ -194,6 +195,8 @@ const ContactUs = () => {
                           required
                           className="form-control"
                           placeholder="Message..."
+                          value={formData.dzMessage}
+                          onChange={handleChange}
                         ></textarea>
                       </div>
                     </div>
@@ -225,11 +228,6 @@ const ContactUs = () => {
             ></iframe>
           </div>
         </div>
-        <section className="call-action style-1 footer-action">
-          <div className="container">
-            <NewsLetter />
-          </div>
-        </section>
       </div>
     </>
   );
