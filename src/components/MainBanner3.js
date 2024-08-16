@@ -32,7 +32,7 @@ const MainBanner3 = ({ open }) => {
         <span style={{ zIndex: '1000' }}>S</span>
         <span style={{ zIndex: '1000' }}>S</span>
       </h2>
-      <div className="">
+      <div className="container">
         <div className="row">
           <div className="col-lg-12">
             <div className={`banner-media anm wow fadeInUp ${fade ? 'fade-in' : 'fade-out'}`} style={{ minHeight: '100vh', opacity: fade ? 1 : 0, transition: fade ? 'opacity 0.5s ease-in' : 'opacity 0.5s ease-out' }}>
@@ -40,7 +40,7 @@ const MainBanner3 = ({ open }) => {
                 src={IMAGES[`mainSliderPic${slideNumber}`]}
                 className="main-img"
                 alt=""
-                style={{ objectFit: 'cover', minHeight: '100vh', maxWidth: '100%' }}
+                style={{ objectFit: 'revert', minHeight: '100vh', maxWidth: '100%' }}
               />
             </div>
           </div>

@@ -26,13 +26,14 @@ const Home = () => {
   return (
     <>
       <div className="page-content bg-white">
-        <div className="main-bnr-two" style={{ minHeight: '100vh'}}>
+        <div className="main-bnr-two" style={{
+          marginTop: window.innerWidth <= 768 ? '120px' : '0px',
+        }}>
           <div
             className="banner-inner"
             style={{
-              backgroundImage: `url(${IMAGES.BackgroundBg15})`,
-              backgroundSize: "cover",
-              minHeight: '100vh'
+              // backgroundImage: `url(${IMAGES.BackgroundBg15})`,
+              // minHeight: '100vh'
             }}
           >
             <MainBanner3 open={setOpen} />
