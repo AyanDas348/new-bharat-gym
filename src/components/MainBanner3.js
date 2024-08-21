@@ -32,15 +32,46 @@ const MainBanner3 = ({ open }) => {
         <span style={{ zIndex: '1000' }}>S</span>
         <span style={{ zIndex: '1000' }}>S</span>
       </h2>
-      <div className="container">
+      <div
+        className="container"
+        style={{
+          paddingLeft: window.innerWidth <= 768 ? '0px' : '',
+          paddingRight: window.innerWidth <= 768 ? '0px' : '',
+        }}
+      >
+        <img
+          src={IMAGES[`mainSliderPic${slideNumber}`]}
+          className="main-img"
+          alt=""
+          style={{
+            objectFit: 'initial',
+            minHeight: '100%',
+            maxWidth: '100%',
+            // aspectRatio: '1.77'
+            display: window.innerWidth <= 768 ? '' : 'none'
+          }}
+        />
         <div className="row">
           <div className="col-lg-12">
-            <div className={`banner-media anm wow fadeInUp ${fade ? 'fade-in' : 'fade-out'}`} style={{ minHeight: '100vh', opacity: fade ? 1 : 0, transition: fade ? 'opacity 0.5s ease-in' : 'opacity 0.5s ease-out' }}>
+            <div
+              className={`banner-media anm wow fadeInUp ${fade ? 'fade-in' : 'fade-out'}`}
+              style={{
+                minHeight: '100vh',
+                opacity: fade ? 1 : 0,
+                transition: fade ? 'opacity 0.5s ease-in' : 'opacity 0.5s ease-out',
+                display: window.innerWidth <= 768 ? 'none' : ''
+              }}
+            >
               <img
                 src={IMAGES[`mainSliderPic${slideNumber}`]}
                 className="main-img"
                 alt=""
-                style={{ objectFit: 'revert', minHeight: '100vh', maxWidth: '100%' }}
+                style={{
+                  objectFit: 'initial',
+                  minHeight: '100vh',
+                  maxWidth: '100%',
+                  // aspectRatio: '1.77'
+                }}
               />
             </div>
           </div>

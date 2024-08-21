@@ -62,7 +62,7 @@ const Services = () => {
                                         </div>
                                         <div className="icon-content">
                                             <h5 className="dz-title m-b10"><Link to={"#"}>{item.title}</Link></h5>
-                                            <p className="m-b25">{item.title}</p>
+                                            {/* <p className="m-b25">{item.title}</p> */}
                                             {/* <div className="btn btn-primary shadow-primary btn-skew"><span>Read More</span></div> */}
                                         </div>
                                     </div>
