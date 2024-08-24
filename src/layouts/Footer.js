@@ -60,7 +60,7 @@ const Footer = () => {
                                     <h4 className="footer-title">Working Hours</h4>
                                     <ul>
                                         <li>
-                                            <span className="days">Monday – Saturday</span>
+                                            <span className="days">Monday – Saturday: </span>
                                             <span className="time">9am – 9pm</span>
                                         </li>
                                         {/* <li>
@@ -68,7 +68,7 @@ const Footer = () => {
                                         {/* <span className="time"><Link to={"/schedule"}>07:00 – 16:00</Link></span> */}
                                         {/* </li> */}
                                         <li>
-                                            <span className="days">Sunday Closed</span>
+                                            <span className="days">Sunday: </span>
                                             <span className="time">9am – 2pm</span>
                                         </li>
                                     </ul>
