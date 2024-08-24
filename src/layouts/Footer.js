@@ -61,14 +61,15 @@ const Footer = () => {
                                     <ul>
                                         <li>
                                             <span className="days">Monday – Saturday</span>
-                                            {/* <span className="time"><Link to={"/schedule"}>07:00 – 21:00</Link></span> */}
+                                            <span className="time">9am – 9pm</span>
                                         </li>
                                         {/* <li>
                                             <span className="days">Saturday</span> */}
-                                            {/* <span className="time"><Link to={"/schedule"}>07:00 – 16:00</Link></span> */}
+                                        {/* <span className="time"><Link to={"/schedule"}>07:00 – 16:00</Link></span> */}
                                         {/* </li> */}
                                         <li>
                                             <span className="days">Sunday Closed</span>
+                                            <span className="time">9am – 2pm</span>
                                         </li>
                                     </ul>
                                     {/* <Link to={"/schedule"} className="btn-link" >More Here <i className="fa-solid fa-arrow-right m-l10"></i></Link> */}
