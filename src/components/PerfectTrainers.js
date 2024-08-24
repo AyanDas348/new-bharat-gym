@@ -45,9 +45,9 @@ const PerfectTrainers = () => {
                         </div>
                     ))}
                 </div>
-                <div className="clearfix wow fadeInUp" data-wow-delay="1.0s">
+                {/* <div className="clearfix wow fadeInUp" data-wow-delay="1.0s">
                     <Link to={"/about-us"} className="btn btn-skew btn-lg btn-primary shadow-primary"><span>About Trainers</span></Link>
-                </div>
+                </div> */}
             </div>                    
         </>
     );
